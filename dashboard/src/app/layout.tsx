@@ -38,9 +38,11 @@
 
 
 import { Providers } from '@/lib/Providers';
-import Navbar from '../components/layout/Navbar';
+
 import './globals.css';
 import { Toaster } from 'react-hot-toast';
+
+
 
 export const metadata = {
   title: 'My Reusable App',
@@ -52,8 +54,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body>
         <Providers>
-          <Navbar />
-          <main className="max-w-7xl mx-auto p-4">{children}</main>
+         
+          <main>{children}</main>
           <Toaster position="top-right" />
         </Providers>
       </body>
